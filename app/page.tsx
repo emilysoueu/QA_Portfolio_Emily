@@ -6,6 +6,7 @@ import Skills from '@/components/Skills';
 import Process from '@/components/Process';
 import Experience from '@/components/Experience';
 import Cases from '@/components/Cases';
+import GithubProjects from '@/components/GithubProjects';
 import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -21,6 +22,7 @@ export default function Home() {
       <Process />
       <Experience />
       <Cases />
+      <GithubProjects />
       <Certifications />
       <Contact />
       <Footer />

@@ -2,15 +2,14 @@
 
 import { motion } from 'framer-motion';
 import { heroStats, heroTestSuite, profile } from '@/lib/content';
+import { asset } from '@/lib/basePath';
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-line bg-grid-fade pt-32 pb-20 md:pt-40 md:pb-28"
+      className="relative overflow-hidden border-b border-line bg-mesh-pastel pt-32 pb-20 md:pt-40 md:pb-28"
     >
-      <div className="absolute inset-0 bg-grid opacity-40 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
-
       <div className="relative mx-auto grid max-w-6xl gap-14 px-6 lg:grid-cols-[1.1fr_1fr] lg:items-center">
         {/* Left: value proposition */}
         <motion.div
@@ -18,7 +17,21 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-line2 bg-surface px-3 py-1 font-mono text-[12px] text-pass">
+          <div className="mb-6 flex items-center gap-3">
+            <img
+              src={asset('/profile-photo.svg')}
+              alt={profile.name}
+              className="h-14 w-14 rounded-full border-2 border-white shadow-card sm:h-16 sm:w-16"
+            />
+            <div>
+              <p className="font-display text-[15px] font-semibold text-ink">
+                {profile.name}
+              </p>
+              <p className="font-mono text-[12px] text-muted">{profile.role}</p>
+            </div>
+          </div>
+
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-line2 bg-white/70 px-3 py-1 font-mono text-[12px] text-pass">
             <span className="h-1.5 w-1.5 rounded-full bg-pass" />
             disponível para novas oportunidades
           </div>
@@ -43,8 +56,8 @@ export default function Hero() {
               Ver experiência
             </a>
             <a
-              href="/Emily_Costa_CV_QA.pdf"
-              className="focus-ring rounded-md border border-line2 px-5 py-3 font-mono text-[13px] text-ink transition-colors hover:border-accent/50 hover:text-accent-glow"
+              href={asset('/Emily_Costa_CV_QA.pdf')}
+              className="focus-ring rounded-md border border-line2 bg-white/70 px-5 py-3 font-mono text-[13px] text-ink transition-colors hover:border-accent/50 hover:text-accent-glow"
             >
               Download CV
             </a>
@@ -72,29 +85,30 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Right: signature element — test suite running against her own profile */}
+        {/* Right: signature element — test suite running against her own profile.
+            Intentionally dark/plum, a contrast card floating on the pastel page. */}
         <motion.div
           initial={{ opacity: 0, y: 16, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
           className="relative"
         >
-          <div className="overflow-hidden rounded-xl border border-line2 bg-surface shadow-card">
-            <div className="flex items-center gap-2 border-b border-line bg-surface2 px-4 py-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-fail/70" />
-              <span className="h-2.5 w-2.5 rounded-full bg-warn/70" />
-              <span className="h-2.5 w-2.5 rounded-full bg-pass/70" />
-              <span className="ml-2 font-mono text-[12px] text-faint">
+          <div className="overflow-hidden rounded-xl border border-[#3A3154] bg-[#241F38] shadow-card">
+            <div className="flex items-center gap-2 border-b border-white/10 bg-[#2C2645] px-4 py-3">
+              <span className="h-2.5 w-2.5 rounded-full bg-fail/80" />
+              <span className="h-2.5 w-2.5 rounded-full bg-sun/80" />
+              <span className="h-2.5 w-2.5 rounded-full bg-pass/80" />
+              <span className="ml-2 font-mono text-[12px] text-white/40">
                 emily_costa_profile.test.py
               </span>
             </div>
 
             <div className="relative p-5 font-mono text-[12.5px] leading-relaxed">
-              <p className="text-muted">
-                <span className="text-faint">$</span> pytest -v
+              <p className="text-white/55">
+                <span className="text-white/30">$</span> pytest -v
                 emily_costa_profile.test.py
               </p>
-              <p className="mt-1 text-faint">
+              <p className="mt-1 text-white/30">
                 collected {heroTestSuite.length} items
               </p>
 
@@ -109,11 +123,11 @@ export default function Hero() {
                       delay: 0.5 + i * 0.18,
                       ease: 'easeOut',
                     }}
-                    className="flex items-start justify-between gap-3 border-b border-line/60 pb-2.5"
+                    className="flex items-start justify-between gap-3 border-b border-white/10 pb-2.5"
                   >
                     <div>
-                      <span className="text-ink">{t.id}</span>
-                      <span className="block text-[11px] text-faint">
+                      <span className="text-white/85">{t.id}</span>
+                      <span className="block text-[11px] text-white/35">
                         {t.desc}
                       </span>
                     </div>
@@ -121,7 +135,7 @@ export default function Hero() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.5 + i * 0.18 + 0.25 }}
-                      className="whitespace-nowrap rounded bg-pass-bg px-2 py-0.5 text-[11px] font-semibold text-pass"
+                      className="whitespace-nowrap rounded bg-pass/15 px-2 py-0.5 text-[11px] font-semibold text-pass"
                     >
                       PASS · {t.time}
                     </motion.span>
@@ -136,8 +150,8 @@ export default function Hero() {
                 className="mt-4 text-pass"
               >
                 {heroTestSuite.length} passed in 1.80s{' '}
-                <span className="text-faint">— ready for production</span>
-                <span className="ml-1 inline-block w-1.5 animate-blink text-ink">
+                <span className="text-white/30">— ready for production</span>
+                <span className="ml-1 inline-block w-1.5 animate-blink text-white/70">
                   ▮
                 </span>
               </motion.p>

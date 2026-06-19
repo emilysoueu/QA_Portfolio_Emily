@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="dark">
+    <html lang="pt-BR">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -45,7 +45,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0E14'/%3E%3Ctext x='50' y='66' font-size='52' font-family='monospace' font-weight='700' fill='%2336D399' text-anchor='middle'%3E%3C/%3E%3C/svg%3E" />
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%239B85D6'/%3E%3Ctext x='50' y='66' font-size='50' font-family='monospace' font-weight='700' fill='%23FFFFFF' text-anchor='middle'%3E%3C/%3E%3C/svg%3E" />
       </head>
       <body>{children}</body>
     </html>

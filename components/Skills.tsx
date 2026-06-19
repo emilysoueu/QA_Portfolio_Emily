@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { skillCategories } from '@/lib/content';
 
+const accentBars = ['bg-pink', 'bg-accent', 'bg-sky', 'bg-sun', 'bg-pink', 'bg-sky'];
+
 export default function Skills() {
   return (
     <section id="competencias" className="border-b border-line bg-surface/30 py-24">
@@ -27,8 +29,11 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: (i % 3) * 0.06 }}
-              className="bg-base p-6"
+              className="relative bg-base p-6"
             >
+              <span
+                className={`absolute inset-x-0 top-0 h-1 ${accentBars[i % accentBars.length]}`}
+              />
               <div className="mb-4 flex items-center justify-between">
                 <h3 className="font-display text-base font-semibold text-ink">
                   {cat.title}

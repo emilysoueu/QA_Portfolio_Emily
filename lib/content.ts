@@ -231,12 +231,39 @@ export const cases = [
   },
 ];
 
+// Repositórios do GitHub — adicione os seus aqui sempre que quiser.
+// Basta copiar um objeto do array e preencher: name, description e url.
+// language é só uma etiqueta visual (ex.: "Python", "JavaScript", "TypeScript").
+// Os itens abaixo são placeholders — substitua por seus repositórios reais
+// (ou apague os que não usar).
+export const githubRepos = [
+  {
+    name: 'salesforce-qa-automation',
+    description: 'Adicione aqui uma descrição breve do que esse repositório faz.',
+    url: 'https://github.com/seu-usuario/seu-repositorio',
+    language: 'Python',
+  },
+  {
+    name: 'api-testing-suite',
+    description: 'Adicione aqui uma descrição breve do que esse repositório faz.',
+    url: 'https://github.com/seu-usuario/seu-repositorio',
+    language: 'Postman',
+  },
+  {
+    name: 'robot-framework-tests',
+    description: 'Adicione aqui uma descrição breve do que esse repositório faz.',
+    url: 'https://github.com/seu-usuario/seu-repositorio',
+    language: 'Robot Framework',
+  },
+];
+
 export const nav = [
   { label: 'Sobre', href: '#sobre' },
   { label: 'Competências', href: '#competencias' },
   { label: 'Processo', href: '#processo' },
   { label: 'Experiência', href: '#experiencia' },
   { label: 'Cases', href: '#cases' },
+  { label: 'GitHub', href: '#github' },
   { label: 'Certificações', href: '#certificacoes' },
   { label: 'Contato', href: '#contato' },
 ];
