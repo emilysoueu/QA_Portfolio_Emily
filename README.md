@@ -1,67 +1,57 @@
-# Emily Costa — Portfólio QA (Next.js + GitHub Pages)
 
-Site estático (Next.js 15 / TypeScript / Tailwind / Framer Motion) pronto para
-publicar no GitHub Pages.
+# 🚀 QA Portfolio — Emily Costa
 
-## Rodar localmente
+Bem-vindo ao meu portfólio de Quality Assurance!
 
-```bash
-npm install
-npm run dev
-```
+Este projeto foi criado para reunir minha trajetória profissional, experiências, habilidades técnicas e projetos relacionados à qualidade de software, automação de testes e Salesforce QA.
 
-Abra http://localhost:3000
+## 👩🏻‍💻 Sobre Mim
 
-## Build de produção (export estático)
+Sou QA Engineer com experiência em testes manuais, automação, testes de API, Salesforce CRM e garantia da qualidade em ambientes corporativos.
 
-```bash
-npm run build
-```
+Acredito que qualidade vai além de encontrar bugs: trata-se de construir produtos confiáveis desde o início do desenvolvimento.
 
-Gera a pasta `out/` com o site 100% estático — é isso que vai para o GitHub Pages.
+## 🛠️ O que você encontrará aqui
 
-## Publicar no GitHub Pages (automático, recomendado)
+* Projetos de Automação de Testes
+* Cases de QA e Salesforce
+* Testes de API
+* Frameworks de Automação
+* Boas Práticas de Qualidade
+* Estudos e Experimentos Técnicos
+* Minha trajetória profissional
 
-1. Crie um repositório no GitHub e suba este projeto:
-   ```bash
-   git init
-   git add .
-   git commit -m "Portfólio QA — Emily Costa"
-   git branch -M main
-   git remote add origin https://github.com/<seu-usuario>/<nome-do-repo>.git
-   git push -u origin main
-   ```
-2. **Importante:** abra `next.config.js` e troque `REPO_NAME` pelo nome exato
-   do seu repositório (ex.: se a URL final for
-   `https://seu-usuario.github.io/portfolio-qa/`, então
-   `REPO_NAME = 'portfolio-qa'`).
-   - Se você for publicar num repositório `<usuario>.github.io` (página de
-     usuário, sem subpasta) ou usar um domínio próprio, troque a linha do
-     `basePath` para `const basePath = '';`.
-3. No GitHub, vá em **Settings → Pages → Build and deployment → Source** e
-   selecione **GitHub Actions**.
-4. O workflow em `.github/workflows/deploy.yml` já está configurado: a cada
-   push na branch `main`, ele builda o site e publica automaticamente.
-5. Em alguns minutos o site estará em
-   `https://<seu-usuario>.github.io/<nome-do-repo>/`.
+## 🚧 Em Construção
 
-## Publicar manualmente (alternativa)
+Este portfólio está em constante evolução.
 
-```bash
-npm run build
-# a pasta out/ contém o site. Publique seu conteúdo na branch gh-pages
-# ou em qualquer hosting estático (Vercel, Netlify, Cloudflare Pages).
-```
+Estou continuamente aprimorando a plataforma e adicionando novos projetos, estudos de caso, automações e aprendizados adquiridos ao longo da minha jornada em QA.
 
-## Itens para personalizar antes de publicar
+Por isso, é normal encontrar novas funcionalidades, melhorias visuais e conteúdos sendo adicionados com frequência.
 
-- `lib/content.ts` — todo o texto do site (experiência, cases, skills, etc.)
-  vem deste arquivo único.
-- `public/Emily_Costa_CV_QA.pdf` — substitua pelo PDF mais atual do currículo
-  sempre que ele for atualizado (o botão "Download CV" aponta para este arquivo).
-- `app/layout.tsx` — metadados de SEO (título, descrição, palavras-chave).
-- Formulário de contato (`components/Contact.tsx`): como o site é estático,
-  o formulário abre o cliente de e-mail do visitante (`mailto:`) com os dados
-  preenchidos. Se quiser receber as submissões direto numa caixa de entrada
-  sem isso, troque por um endpoint do **Formspree** ou **Getform** (gratuitos
-  para uso básico) — basta apontar o `action` do formulário para o endpoint deles.
+## 🌱 Atualmente Explorando
+
+* QA Automation com Python
+* Selenium
+* Cypress
+* Playwright
+* Testes de API
+* CI/CD
+* Salesforce QA
+* Inteligência Artificial aplicada à Qualidade de Software
+
+## 📌 Objetivo
+
+Criar um espaço que represente minha evolução profissional e compartilhe conhecimento sobre qualidade de software, automação e engenharia de testes.
+
+## 🤝 Vamos nos conectar?
+
+Se você é recrutador, profissional de tecnologia ou também atua com QA, ficarei feliz em trocar experiências.
+
+🔗 LinkedIn: [www.linkedin.com/in/emilysoueu](http://www.linkedin.com/in/emilysoueu)
+
+📧 E-mail: [emilys2costa@gmail.com](mailto:emilys2costa@gmail.com)
+
+---
+
+⭐ Se você visitou este projeto, fique à vontade para acompanhar sua evolução. Novos conteúdos e projetos serão adicionados regularmente.
