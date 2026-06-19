@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import { about } from '@/lib/content';
 
 export default function About() {
@@ -15,17 +12,11 @@ export default function About() {
             </h2>
           </div>
 
-          <motion.div
-            initial={{ opacity: 1, y: 0 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="space-y-5 text-[15px] leading-[1.85] text-muted md:text-base"
-          >
+          <div className="space-y-5 text-[15px] leading-[1.85] text-muted md:text-base">
             {about.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@
 // serves your site from a sub-path, so basePath/assetPrefix MUST match your repo name.
 // If you deploy to a custom domain or to <user>.github.io (user/org page), set
 // BASE_PATH to an empty string instead.
-const REPO_NAME = 'QA_Portfolio_Emily'; // <-- change to your exact GitHub repo name
+const REPO_NAME = 'emily-costa-qa-portfolio'; // <-- change to your exact GitHub repo name
 const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
 const basePath = isGithubActions ? `/${REPO_NAME}` : '';
 
