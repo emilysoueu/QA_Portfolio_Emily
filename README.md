@@ -3,6 +3,8 @@
 
 Bem-vindo ao meu portfólio de Quality Assurance!
 
+Link: https://emilysoueu.github.io/QA_Portfolio_Emily/
+
 Este projeto foi criado para reunir minha trajetória profissional, experiências, habilidades técnicas e projetos relacionados à qualidade de software, automação de testes e Salesforce QA.
 
 ## 👩🏻‍💻 Sobre Mim
