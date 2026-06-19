@@ -26,7 +26,7 @@ export default function Process() {
             {processSteps.map((s, i) => (
               <motion.div
                 key={s.step}
-                initial={{ opacity: 0, y: 14 }}
+                initial={{ opacity: 1, y: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}

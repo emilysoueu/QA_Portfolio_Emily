@@ -23,7 +23,7 @@ export default function Certifications() {
               {certifications.map((cert, i) => (
                 <motion.div
                   key={cert.name}
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 1, y: 0 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.06 }}
@@ -53,7 +53,7 @@ export default function Certifications() {
               {education.map((edu, i) => (
                 <motion.div
                   key={edu.degree}
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 1, y: 0 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.06 }}

@@ -7,6 +7,8 @@ export const profile = {
   roleLine: 'QA Engineer | QA Automation Engineer | Quality Assurance Specialist',
   location: 'São Luís, MA — Brasil',
   email: 'emilys2costa@gmail.com',
+  phone: '+55 (98) 92004-3656',
+  phoneDigits: '5598920043656', // somente números, com código do país — usado no link do WhatsApp
   linkedin: 'https://www.linkedin.com/in/emilysoueu',
   github: 'https://github.com/',
   languages: [
@@ -77,7 +79,7 @@ export const skillCategories = [
   {
     title: 'Ferramentas',
     status: 'pass' as const,
-    items: ['Confluence', 'Notion', 'GitHub', 'Salesforce CRM'],
+    items: ['Confluence', 'Notion', 'GitHub', 'Salesforce CRM', 'Cypress'],
   },
   {
     title: 'Dados',

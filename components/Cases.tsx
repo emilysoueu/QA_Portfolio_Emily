@@ -18,7 +18,7 @@ export default function Cases() {
           {cases.map((c, i) => (
             <motion.article
               key={c.title}
-              initial={{ opacity: 0, y: 14 }}
+              initial={{ opacity: 1, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: (i % 2) * 0.08 }}

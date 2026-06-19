@@ -18,7 +18,7 @@ export default function Experience() {
           {experience.map((exp, i) => (
             <motion.div
               key={`${exp.company}-${exp.period}`}
-              initial={{ opacity: 0, x: -10 }}
+              initial={{ opacity: 1, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.05 }}
